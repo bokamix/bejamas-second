@@ -6,9 +6,9 @@ if (process.env.NODE_ENV !== 'production') {
 }
 module.exports = {
   siteMetadata: {
-    title: `Bejamas`,
-    author: `Wojciech Janiak  `,
-    description: `Work.`,
+    title: `Gatsby Starter Blog`,
+    author: `Kyle Mathews`,
+    description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `kylemathews`,
