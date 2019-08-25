@@ -3,13 +3,14 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Bejamas Trial`,
+    author: `Wojciech Janiak`,
+    description: `A simple website`,
+    siteUrl: `https://jedeble.netlify.com`,
     
   },
   plugins: [
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,6 +24,7 @@ module.exports = {
         path: `${__dirname}/content/assets`,
         name: `assets`,
       },
+      
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -69,12 +71,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+   
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -82,5 +79,8 @@ module.exports = {
         accessToken: `fpJkWjKAYEjVr3C9yl43_H0vNuvam6hPyblQDmNoVoU`,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    }
   ],
 }
