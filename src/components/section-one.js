@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
+import Navigation from '../components/navigation'
 const Flexdiv = styled.div`
   
  display:flex;
@@ -12,7 +13,8 @@ class SectionOne extends React.Component {
   render() {
   
     return (
-      
+      <>
+      <Navigation />
         <Flexdiv>
         
         {this.props.things.map(({ node }) => {
@@ -39,6 +41,7 @@ class SectionOne extends React.Component {
 
 
       </Flexdiv>
+      </>
     )
   }
 }
