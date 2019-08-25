@@ -1,8 +1,10 @@
 import React from "react"
 import styled from 'styled-components';
-const Reddiv = styled.div`
+const Flexdiv = styled.div`
   
-  background: #123123;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
   
   }
 `;
@@ -12,7 +14,7 @@ class SectionSecond extends React.Component {
   
     return (
       
-        <Reddiv>
+        <Flexdiv>
         
         {this.props.things.map(({ node }) => {
           let title = node.title 
@@ -35,7 +37,7 @@ class SectionSecond extends React.Component {
           )
         })}
        
-      </Reddiv>
+      </Flexdiv>
     )
   }
 }

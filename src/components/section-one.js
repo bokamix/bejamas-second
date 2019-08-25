@@ -4,7 +4,7 @@ const Flexdiv = styled.div`
   
  display:flex;
  flex-wrap: wrap;
-  
+ justify-content: space-around;
   }
 `;
 
@@ -36,6 +36,8 @@ class SectionOne extends React.Component {
           )
         })}
        
+
+
       </Flexdiv>
     )
   }
