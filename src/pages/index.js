@@ -2,6 +2,7 @@ import React from "react"
 import {  graphql } from "gatsby"
 import SectionOne from '../components/section-one'
 import SectionSecond from '../components/section-second'
+import Navigation from '../components/navigation'
 
 import SEO from "../components/seo"
 
@@ -14,7 +15,7 @@ class Index extends React.Component {
     return (
       <div>
         <SEO title="All posts" />
-        
+        <Navigation />
 <SectionOne things={posts}/>
 <SectionSecond things={offers}/>
                
