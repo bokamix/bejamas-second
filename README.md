@@ -1,1 +1,1 @@
-Strona trial dla Bejamas jako zadanie rektutacyjne.
+Strona trial dla Bejamas jako zadanie rekrutacyjne.
