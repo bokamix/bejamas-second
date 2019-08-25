@@ -1,34 +1,31 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import {  graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
+
+
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const { data } = this.props   
     const posts = data.allContentfulPost.edges
-
+    const offers = data.allContentfulOffer.edges
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <div>
         <SEO title="All posts" />
-        <Bio />
+        
         {posts.map(({ node }) => {
-          const title = node.title || node.slug
+          let title = node.title 
           return (
-            <article key={node.slug}>
+            <article key={node.title}>
               <header>
                 <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
+                 
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.slug}>
+                  
                     {title}
-                  </Link>
+                  
                 </h3>
                
               </header>
@@ -38,7 +35,23 @@ class BlogIndex extends React.Component {
             </article>
           )
         })}
-      </Layout>
+        {offers.map(({ node }) => {
+          let title = node.title 
+          return (
+            <article key={node.title}>
+              <header>
+                <h3>
+                  {title}
+                </h3>
+               
+              </header>
+              <section>
+                <p>{node.shorttext}</p>
+              </section>
+            </article>
+          )
+        })}
+      </div>
     )
   }
 }
@@ -57,6 +70,15 @@ export const pageQuery = graphql`
         node {
           title
           subtitle
+          
+        }
+      }
+    }
+    allContentfulOffer{
+      edges{
+        node {
+          title
+          shorttext
           
         }
       }
