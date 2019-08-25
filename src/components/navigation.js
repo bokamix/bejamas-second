@@ -1,11 +1,38 @@
 import React from "react"
+import {  Link } from "gatsby"
 import styled from 'styled-components';
-const Flexdiv = styled.div`
-  
+const MenuWrapper = styled.div`  
 display:flex;
-flex-wrap: wrap;
-justify-content: space-around;
-  
+flex-wrap: nowrap;
+justify-content: space-between;  
+align-items: center;
+background:red;
+  }
+`;
+const NavWrapper = styled.ul`  
+display:flex; 
+list-style-type: none;
+padding-inline-start: 0;
+  }
+`;
+const NavItem = styled.li` 
+padding:10px; 
+a{
+text-decoration: none;
+display:block;
+color:white;}
+a:hover{
+  color:red;
+}
+
+a:active{
+  color:red;
+  text-decoration: none;
+}
+a:visited{
+  color:white;
+  text-decoration: none;
+}
   }
 `;
 
@@ -14,10 +41,18 @@ class Navigation extends React.Component {
   
     return (
       
-        <Flexdiv>
-    <div>To jest navigacja</div>
+        <MenuWrapper>
+          <div>Logo</div>
+    <nav className="menu">
+  <NavWrapper>
+    <NavItem><Link to="#">Home</Link></NavItem>
+    <NavItem><Link to="#">Home</Link></NavItem>
+    <NavItem><Link to="#">Home</Link></NavItem>
+    <NavItem>Ikona</NavItem>
+  </NavWrapper>
+</nav>
        
-      </Flexdiv>
+      </MenuWrapper>
     )
   }
 }
