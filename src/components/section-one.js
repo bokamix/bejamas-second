@@ -1,8 +1,9 @@
 import React from "react"
 import styled from 'styled-components';
-const Blackdiv = styled.div`
+const Flexdiv = styled.div`
   
-  background: #123123;
+ display:flex;
+ flex-wrap: wrap;
   
   }
 `;
@@ -12,7 +13,7 @@ class SectionOne extends React.Component {
   
     return (
       
-        <Blackdiv>
+        <Flexdiv>
         
         {this.props.things.map(({ node }) => {
           let title = node.title 
@@ -35,7 +36,7 @@ class SectionOne extends React.Component {
           )
         })}
        
-      </Blackdiv>
+      </Flexdiv>
     )
   }
 }
