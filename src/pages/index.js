@@ -39,6 +39,7 @@ export const pageQuery = graphql`
           title
           subtitle
           
+          
         }
       }
     }
@@ -47,6 +48,11 @@ export const pageQuery = graphql`
         node {
           title
           shorttext
+          icon {
+            resolutions {
+              src
+            }
+          }
           
         }
       }
