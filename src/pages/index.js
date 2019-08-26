@@ -11,7 +11,7 @@ import SEO from "../components/seo"
 const BackgroundColor = styled.div`  
 
 background-color: #173044;
-height: 730px;
+height: 854px;
 padding-top:43px;
 
   }

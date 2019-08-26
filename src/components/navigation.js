@@ -8,8 +8,8 @@ justify-content: space-between;
 align-items: center;
 background:white;
 width: 1140px;
+height:81px;
 margin: 0 auto;
-
 margin-bottom: 164px;
 
   }
