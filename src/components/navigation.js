@@ -7,6 +7,11 @@ flex-wrap: nowrap;
 justify-content: space-between;  
 align-items: center;
 background:white;
+width: 1140px;
+margin: 0 auto;
+
+margin-bottom: 164px;
+
   }
 `;
 const NavWrapper = styled.ul`  

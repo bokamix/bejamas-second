@@ -1,5 +1,10 @@
 import React from "react"
 import styled from 'styled-components';
+
+const SectionWrapper = styled.div`  
+background:white;
+  }
+`;
 const MainSectionWrapper = styled.div`  
 display:flex;
 flex-wrap: wrap;
@@ -63,7 +68,7 @@ class SectionSecond extends React.Component {
   render() {
   
     return (
-      <>
+      <SectionWrapper>
       <TitleSection>What we offer</TitleSection>
       <SubtitleSection>Logistics Server<div/></SubtitleSection>
         <MainSectionWrapper>        
@@ -80,7 +85,7 @@ class SectionSecond extends React.Component {
         })}
        
       </MainSectionWrapper>
-      </>
+      </SectionWrapper>
     )
   }
 }

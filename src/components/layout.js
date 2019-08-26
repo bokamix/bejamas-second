@@ -9,9 +9,7 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-        
-        >
+        <h1>
           
         </h1>
       )

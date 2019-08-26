@@ -1,13 +1,13 @@
 import React from "react"
 import styled from 'styled-components';
-import Navigation from '../components/navigation'
+
 import {  Link } from "gatsby"
 
 const SectionWrapper = styled.div`  
-background:black;
-padding-bottom:30px;
-width:1923px;
-margin: 0 auto;
+width: 1923px;
+height: 730px;
+
+margin:0 auto;
   }
 `;
 const ContentWrapper = styled.div`  
@@ -27,9 +27,10 @@ const PostWrapper = styled.div`
 const SectionTitle = styled.h2`  
 text-shadow: 1px 1px 3px #aaaaaa;
 color: #ffffff;
-font-family: "Raleway - Extra Bold";
+font-family: 'Raleway', sans-serif;
+
 font-size: 72px;
-font-weight: 400;
+font-weight: 700;
 line-height: 60px;
 text-transform: uppercase;
 margin-bottom:154px;
@@ -125,7 +126,7 @@ class SectionOne extends React.Component {
     return (
       <SectionWrapper>
         <ContentWrapper>
-      <Navigation />
+     
 
       <SectionTitle><div />Section One Title</SectionTitle>
         <PostWrapper>

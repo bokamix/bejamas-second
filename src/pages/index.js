@@ -2,10 +2,20 @@ import React from "react"
 import {  graphql } from "gatsby"
 import SectionOne from '../components/section-one'
 import SectionSecond from '../components/section-second'
+import styled from 'styled-components';
+import Navigation from '../components/navigation'
+import '../pages/index.css';
 
 
 import SEO from "../components/seo"
+const BackgroundColor = styled.div`  
 
+background-color: #173044;
+height: 730px;
+padding-top:43px;
+
+  }
+`;
 
 class Index extends React.Component {
   render() {
@@ -13,13 +23,14 @@ class Index extends React.Component {
     const posts = data.allContentfulPostItem.edges
     const offers = data.allContentfulOfferItem.edges
     return (
-      <div>
+      <BackgroundColor>
+         
         <SEO title="All posts" />
-        
+        <Navigation />
 <SectionOne things={posts}/>
 <SectionSecond things={offers}/>
                
-      </div>
+      </BackgroundColor>
     )
   }
 }
