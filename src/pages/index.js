@@ -13,7 +13,7 @@ const BackgroundColor = styled.div`
 background-color: #173044;
 height: 820px;
 padding-top:43px;
-width:1923px;
+width:100%;
 
   }
 `;
