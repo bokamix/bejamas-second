@@ -5,7 +5,7 @@ import {  Link } from "gatsby"
 
 const SectionWrapper = styled.div`  
 width: 1923px;
-height: 730px;
+
 
 margin:0 auto;
   }
@@ -62,42 +62,58 @@ position: relative;
 }
 `;
 const SectionMainButton = styled.div`  
-width: 216px;
-height: 49px;
-border-radius: 25px;
-background-color: #fdc300;
-margin:0 auto;
-margin-bottom:52px;
-margin-top:50px;
+  width:216px;
+  border-radius: 25px;
+  background-color: #fdc300;
+  margin:0 auto;
+  margin-bottom:52px;
+  margin-top:50px;
 text-align:center;
 a{
   display:block;
   text-decoration: none;
-  width: 89px;
-height: 9px;
-color: #ffffff;
-font-family: Raleway;
-font-size: 13px;
-font-weight: 700;
-line-height: 20px;
-text-transform: uppercase;
+  padding-top:18px;
+  padding-left:63px;
+  padding-right:64px;
+  padding-bottom:16px; 
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  
+  text-transform: uppercase;
 }
   }
 `;
 const SectionButton = styled.div`  
 
-width:100px;
+width: 165px;
+  height: 34px;
+  background-color: #1b2936;
 position: absolute; 
 bottom: 0;
 right:0;
-background:white;
 text-align:center;
     a{
       display:block;
       text-decoration: none;
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
     }
     span{
-      background:yellow;
+      width: 30px;
+      height: 34px;
+      background-color: #037ed1;
+      width: 6px;
+      height: 9px;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 400;
+      line-height: 20px;
     }
 
   }
@@ -148,7 +164,7 @@ class SectionOne extends React.Component {
           return (
             <PostBox key={node.title}>
                 <BoxImg>
-                <SectionButton><Link to="#">View Details<span> > </span></Link></SectionButton>
+                <SectionButton><Link to="#">READ MORE<span> > </span></Link></SectionButton>
                 </BoxImg>
                 <BoxContent>
                 <PostTitle>

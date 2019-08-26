@@ -3,25 +3,39 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div`  
 background:white;
+
   }
 `;
 const MainSectionWrapper = styled.div`  
 display:flex;
 flex-wrap: wrap;
-justify-content: space-around;
-width: 700px;
+justify-content: left;
 margin: 0 auto;
+margin-left:390px;
   }
 `;
 const TitleSection = styled.h2`  
-color:red;
 text-align:center;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 69px;
+  line-height: 20px;
 
   }
 `;
 const SubtitleSection = styled.h3`  
-color:yellow;
+color: #888888;
+font-family: 'Raleway', sans-serif;
+font-size: 13px;
+font-weight: 600;
+line-height: 20px;
+text-transform: uppercase;
 text-align:center;
+
+
+
 div{
     width:15px;
     height:0px;
@@ -33,27 +47,29 @@ div{
 `;
 const OfferElement = styled.div`  
 display:flex;
-width:300px;
+width:555px;
+height:182px;
+margin-left:30px;
 align-items: center;
   }
 `;
 const Icon = styled.img`  
-margin-right:10px;
+margin:40px;
   }
 `;
 const ShortText = styled.p`  
-width: 354px;
-height: 73px;
+
 color: #777777;
 font-family: "Open Sans";
 font-size: 13px;
 font-weight: 400;
 line-height: 20px;
+height: 73px;
+width:354px;
   }
 `;
 const OfferTitle = styled.h3`  
-width: 151px;
-height: 18px;
+
 color: #333333;
 font-family: Raleway;
 font-size: 18px;
@@ -76,7 +92,7 @@ class SectionSecond extends React.Component {
           let title = node.title 
           return (
             <OfferElement key={node.title}>
-              <Icon width="50" height="50" src={node.icon.resolutions.src} alt="icon"/>
+              <Icon  src={node.icon.resolutions.src} alt="icon"/>
                 <div><OfferTitle>{title}</OfferTitle>
                 <ShortText>{node.shorttext}</ShortText>
                 </div>
