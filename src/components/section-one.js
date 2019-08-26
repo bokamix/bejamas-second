@@ -9,25 +9,41 @@ padding-bottom:30px;
   }
 `;
 const ContentWrapper = styled.div`  
-width:940px;
-margin:0 auto;
+width:1140px;
+margin-left:393px;
   }
 `;
 const PostWrapper = styled.div`  
  display:flex;
  flex-wrap: wrap;
- justify-content: center;
+ justify-content: space-between;
+ &:first-child{
+   background:red;
+ }
   }
 `;
 const SectionTitle = styled.h2`  
- color:green;
- 
-  }
+width: 504px;
+height: 172px;
+text-shadow: 1px 1px 3px #aaaaaa;
+color: #ffffff;
+font-family: "Raleway - Extra Bold";
+font-size: 72px;
+font-weight: 400;
+line-height: 60px;
+text-transform: uppercase;
+
+
+div{
+  width:66px;
+  height:0px;
+  border: solid 2px #fdc300;
+}
 `;
 const PostBox = styled.div`  
 background:gray;
-width:300px;
-margin:6px;
+width:360px;
+
   }
 `;
 const BoxContent = styled.div`  
@@ -39,14 +55,15 @@ min-height:120px;
 const BoxImg = styled.div`  
 background:Gray;
 height:100px;
-position: relative; 
-  }
+position: relative;
+}
 `;
 const SectionMainButton = styled.div`  
 width:100px;
 background:white;
 margin:0 auto;
 margin-bottom:30px;
+margin-top:30px;
 text-align:center;
 a{
   display:block;
@@ -55,22 +72,36 @@ a{
   }
 `;
 const SectionButton = styled.div`  
+
 width:100px;
 position: absolute; 
 bottom: 0;
 right:0;
 background:white;
 text-align:center;
-a{
-  display:block;
-  text-decoration: none;
-}
-span{
-  background:yellow;
-}
+    a{
+      display:block;
+      text-decoration: none;
+    }
+    span{
+      background:yellow;
+    }
 
   }
 `;
+
+const PostSubtitle = styled.div` 
+font-size:20px; 
+  div{
+    width:15px;
+    height:0px;
+    margin-bottom: -20px;
+    border: solid 1px yellow;
+  }
+  }
+`;
+
+
 
 class SectionOne extends React.Component {
   render() {
@@ -80,7 +111,7 @@ class SectionOne extends React.Component {
         <ContentWrapper>
       <Navigation />
 
-      <SectionTitle>Section One Title</SectionTitle>
+      <SectionTitle><div />Section One Title</SectionTitle>
         <PostWrapper>
         
         {this.props.things.map(({ node }) => {
@@ -93,7 +124,7 @@ class SectionOne extends React.Component {
                 <BoxContent><h3>
                 {title}
                 </h3>    
-                <p>{node.subtitle}</p>
+                <PostSubtitle><div /><p>{node.subtitle}</p></PostSubtitle>
                 </BoxContent>
           </PostBox>
           )

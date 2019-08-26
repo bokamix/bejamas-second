@@ -6,7 +6,7 @@ display:flex;
 flex-wrap: nowrap;
 justify-content: space-between;  
 align-items: center;
-background:red;
+background:white;
   }
 `;
 const NavWrapper = styled.ul`  
@@ -20,7 +20,7 @@ padding:10px;
 a{
 text-decoration: none;
 display:block;
-color:white;}
+color:black;}
 a:hover{
   color:red;
 }
@@ -30,7 +30,7 @@ a:active{
   text-decoration: none;
 }
 a:visited{
-  color:white;
+  color:black;
   text-decoration: none;
 }
   }

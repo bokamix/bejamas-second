@@ -17,6 +17,13 @@ text-align:center;
 const SubtitleSection = styled.h3`  
 color:yellow;
 text-align:center;
+div{
+    width:15px;
+    height:0px;
+    border: solid 1px yellow;
+    margin:0 auto;
+    margin-top:4px;
+}
   }
 `;
 const OfferElement = styled.div`  
@@ -36,7 +43,7 @@ class SectionSecond extends React.Component {
     return (
       <>
       <TitleSection>What we offer</TitleSection>
-      <SubtitleSection>Logistics Server</SubtitleSection>
+      <SubtitleSection>Logistics Server<div/></SubtitleSection>
         <MainSectionWrapper>        
         {this.props.things.map(({ node }) => {
           let title = node.title 
