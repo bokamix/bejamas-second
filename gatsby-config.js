@@ -1,4 +1,15 @@
-
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Open Sans', 'Raleway']
+        }
+      }
+    }
+  ]
+}
 
 
 module.exports = {
@@ -79,6 +90,7 @@ module.exports = {
         accessToken: `fpJkWjKAYEjVr3C9yl43_H0vNuvam6hPyblQDmNoVoU`,
       },
     },
+    
     {
       resolve: `gatsby-plugin-styled-components`,
     }
