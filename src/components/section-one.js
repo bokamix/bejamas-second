@@ -88,28 +88,30 @@ a{
 const SectionButton = styled.div`  
 
 width: 165px;
-  height: 34px;
-  background-color: #1b2936;
+background-color: #1b2936;
 position: absolute; 
 bottom: 0;
 right:0;
 text-align:center;
     a{
+      padding-top:7px;
+      padding-left:30px;
+      padding-bottom:6px;      
       display:block;
       text-decoration: none;
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 20px;
       text-transform: uppercase;
+      
     }
     span{
-      width: 30px;
-      height: 34px;
-      background-color: #037ed1;
-      width: 6px;
-      height: 9px;
+     
+      margin-left:30px;
+      background-color: #2f3840;
+      padding:13px 11px 11px 13px;
       color: #ffffff;
       font-size: 9px;
       font-weight: 400;
@@ -123,7 +125,7 @@ const PostSubtitle = styled.div`
 width: 303px;
 height: 70px;
 color: #777777;
-font-family: "Open Sans";
+font-family: 'Open Sans', sans-serif;
 font-size: 13px;
 font-weight: 400;
 line-height: 20px;
@@ -141,7 +143,8 @@ div{
   margin-bottom: 9px;
   width:27px;
   height:0px;  
-  border: solid 1.5px yellow;
+  border: solid 1.5px #fdc300;
+
 } 
   
   }

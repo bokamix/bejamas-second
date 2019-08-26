@@ -60,7 +60,7 @@ margin:40px;
 const ShortText = styled.p`  
 
 color: #777777;
-font-family: "Open Sans";
+font-family: 'Open Sans', sans-serif;
 font-size: 13px;
 font-weight: 400;
 line-height: 20px;
