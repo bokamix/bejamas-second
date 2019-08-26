@@ -46,7 +46,7 @@ div{
 }
 `;
 const PostBox = styled.div`  
-background:gray;
+background:#dededd;
 width:360px;
   }
 `;
@@ -58,7 +58,7 @@ height:184px;
   }
 `;
 const BoxImg = styled.div`  
-background:Gray;
+background:#dededd;
 height:216px;
 position: relative;
 }

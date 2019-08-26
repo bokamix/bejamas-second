@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div`  
 background:white;
+width:1923px;
 
   }
 `;
