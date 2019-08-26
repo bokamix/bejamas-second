@@ -24,9 +24,11 @@ const PostWrapper = styled.div`
  }
   }
 `;
-const SectionTitle = styled.h2`  
+const SectionTitle = styled.h2`
+
+  
 width: 504px;
-height: 172px;
+
 text-shadow: 1px 1px 3px #aaaaaa;
 color: #ffffff;
 font-family: 'Raleway', sans-serif;

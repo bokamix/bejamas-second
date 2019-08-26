@@ -9,7 +9,7 @@ background:white;
 const MainSectionWrapper = styled.div`  
 display:flex;
 flex-wrap: wrap;
-justify-content: left;
+justify-content: flex-start;
 margin: 0 auto;
 margin-left:390px;
   }
