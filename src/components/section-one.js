@@ -6,6 +6,8 @@ import {  Link } from "gatsby"
 const SectionWrapper = styled.div`  
 background:black;
 padding-bottom:30px;
+width:1923px;
+margin: 0 auto;
   }
 `;
 const ContentWrapper = styled.div`  
@@ -23,8 +25,6 @@ const PostWrapper = styled.div`
   }
 `;
 const SectionTitle = styled.h2`  
-width: 504px;
-height: 172px;
 text-shadow: 1px 1px 3px #aaaaaa;
 color: #ffffff;
 font-family: "Raleway - Extra Bold";
@@ -32,6 +32,7 @@ font-size: 72px;
 font-weight: 400;
 line-height: 60px;
 text-transform: uppercase;
+margin-bottom:154px;
 
 
 div{
@@ -43,31 +44,40 @@ div{
 const PostBox = styled.div`  
 background:gray;
 width:360px;
-
   }
 `;
 const BoxContent = styled.div`  
 background:white;
 padding:8px;
-min-height:120px;
+min-height:184px;
   }
 `;
 const BoxImg = styled.div`  
 background:Gray;
-height:100px;
+height:216px;
 position: relative;
 }
 `;
 const SectionMainButton = styled.div`  
-width:100px;
-background:white;
+width: 216px;
+height: 49px;
+border-radius: 25px;
+background-color: #fdc300;
 margin:0 auto;
-margin-bottom:30px;
-margin-top:30px;
+margin-bottom:52px;
+margin-top:50px;
 text-align:center;
 a{
   display:block;
   text-decoration: none;
+  width: 89px;
+height: 9px;
+color: #ffffff;
+font-family: Raleway;
+font-size: 13px;
+font-weight: 700;
+line-height: 20px;
+text-transform: uppercase;
 }
   }
 `;
@@ -91,7 +101,13 @@ text-align:center;
 `;
 
 const PostSubtitle = styled.div` 
-font-size:20px; 
+width: 303px;
+height: 70px;
+color: #777777;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
   div{
     width:15px;
     height:0px;

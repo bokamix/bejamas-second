@@ -10,8 +10,8 @@ import SEO from "../components/seo"
 class Index extends React.Component {
   render() {
     const { data } = this.props   
-    const posts = data.allContentfulPost.edges
-    const offers = data.allContentfulOffer.edges
+    const posts = data.allContentfulPostItem.edges
+    const offers = data.allContentfulOfferItem.edges
     return (
       <div>
         <SEO title="All posts" />
@@ -33,7 +33,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allContentfulPost{
+    allContentfulPostItem{
       edges{
         node {
           title
@@ -43,7 +43,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulOffer{
+    allContentfulOfferItem{
       edges{
         node {
           title

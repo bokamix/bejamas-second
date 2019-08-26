@@ -36,6 +36,28 @@ const Icon = styled.img`
 margin-right:10px;
   }
 `;
+const ShortText = styled.p`  
+width: 354px;
+height: 73px;
+color: #777777;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+  }
+`;
+const OfferTitle = styled.h3`  
+width: 151px;
+height: 18px;
+color: #333333;
+font-family: Raleway;
+font-size: 18px;
+font-weight: 700;
+line-height: 60px;
+  }
+`;
+
+
 
 class SectionSecond extends React.Component {
   render() {
@@ -50,8 +72,8 @@ class SectionSecond extends React.Component {
           return (
             <OfferElement key={node.title}>
               <Icon width="50" height="50" src={node.icon.resolutions.src} alt="icon"/>
-                <div><h3>{title}</h3>
-                <p>{node.shorttext}</p>
+                <div><OfferTitle>{title}</OfferTitle>
+                <ShortText>{node.shorttext}</ShortText>
                 </div>
             </OfferElement>
           )
